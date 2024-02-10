@@ -23,7 +23,7 @@ from Venom.modules.helpers import (
 )
 
 
-@VenomX.on_cmd(["start", "aistart"])
+@VenomX.on_cmd(["hstart", "aistart"])
 async def start(_, m: Message):
     if m.chat.type == ChatType.PRIVATE:
         accha = await m.reply_text(
